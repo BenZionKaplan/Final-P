@@ -1,0 +1,560 @@
+{
+    "title": "בדיקת הפעלה על מערכת גוגל כרום לוודא שהאתר מותאם לגוגל כרום",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 811,
+            "height": 635,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "chrome://new-tab-page/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "chrome://new-tab-page/",
+                    "title": "New Tab"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Search Google or type a URL"
+                ],
+                [
+                    "body > ntp-app",
+                    "#realbox",
+                    "#input"
+                ],
+                [
+                    "xpath//html/body/ntp-app",
+                    "xpath///*[@id=\"realbox\"]",
+                    "xpath///*[@id=\"input\"]"
+                ]
+            ],
+            "offsetY": 24,
+            "offsetX": 375
+        },
+        {
+            "type": "change",
+            "value": "https://jpetstore.aspectran.com/catalog/",
+            "selectors": [
+                [
+                    "aria/Search Google or type a URL"
+                ],
+                [
+                    "body > ntp-app",
+                    "#realbox",
+                    "#input"
+                ],
+                [
+                    "xpath//html/body/ntp-app",
+                    "xpath///*[@id=\"realbox\"]",
+                    "xpath///*[@id=\"input\"]"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        },
+        {
+            "type": "navigate",
+            "url": "https://jpetstore.aspectran.com/catalog/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#SidebarContent > a:nth-child(1)"
+                ],
+                [
+                    "xpath///*[@id=\"SidebarContent\"]/a[1]"
+                ]
+            ],
+            "offsetY": 9.262496948242188,
+            "offsetX": 21,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/categories/FISH",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/FI-SW-01[role=\"link\"]"
+                ],
+                [
+                    "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"Catalog\"]/table/tbody/tr[2]/td[1]/a"
+                ],
+                [
+                    "text/FI-SW-01"
+                ]
+            ],
+            "offsetY": 8.662490844726562,
+            "offsetX": 46.47499084472656,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/products/FI-SW-01",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/EST-1[role=\"link\"]"
+                ],
+                [
+                    "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"Catalog\"]/table/tbody/tr[2]/td[1]/a"
+                ],
+                [
+                    "text/EST-1"
+                ]
+            ],
+            "offsetY": 4.4250030517578125,
+            "offsetX": 28.075000762939453,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/items/EST-1",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Cats"
+                ],
+                [
+                    "#QuickLinks > a:nth-child(4)"
+                ],
+                [
+                    "xpath///*[@id=\"QuickLinks\"]/a[4]"
+                ],
+                [
+                    "text/Cats"
+                ]
+            ],
+            "offsetY": 11.0625,
+            "offsetX": 21.125,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/categories/CATS",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Return to Main Menu"
+                ],
+                [
+                    "#BackLink > a"
+                ],
+                [
+                    "xpath///*[@id=\"BackLink\"]/a"
+                ],
+                [
+                    "text/Return to Main"
+                ]
+            ],
+            "offsetY": 9.0625,
+            "offsetX": 72.01251220703125,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#SidebarContent > a:nth-child(10)"
+                ],
+                [
+                    "xpath///*[@id=\"SidebarContent\"]/a[4]"
+                ]
+            ],
+            "offsetY": 9.662490844726562,
+            "offsetX": 23,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/categories/REPTILES",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/RP-LI-02[role=\"link\"]"
+                ],
+                [
+                    "#Catalog > table > tbody > tr:nth-child(3) > td:nth-child(1) > a"
+                ],
+                [
+                    "xpath///*[@id=\"Catalog\"]/table/tbody/tr[3]/td[1]/a"
+                ],
+                [
+                    "text/RP-LI-02"
+                ]
+            ],
+            "offsetY": 4.662506103515625,
+            "offsetX": 44.51249694824219,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/products/RP-LI-02",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Add to Cart[role=\"link\"]"
+                ],
+                [
+                    "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(5) > a"
+                ],
+                [
+                    "xpath///*[@id=\"Catalog\"]/table/tbody/tr[2]/td[5]/a"
+                ],
+                [
+                    "text/Add to Cart"
+                ]
+            ],
+            "offsetY": 23.86248779296875,
+            "offsetX": 30.25,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/cart/viewCart",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/1",
+                    "aria/[role=\"spinbutton\"]"
+                ],
+                [
+                    "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=number]"
+                ],
+                [
+                    "xpath///*[@id=\"Cart\"]/form/table/tbody/tr[2]/td[5]/input"
+                ]
+            ],
+            "offsetY": 30.862503051757812,
+            "offsetX": 1.012481689453125,
+            "duration": 743.5
+        },
+        {
+            "type": "change",
+            "value": "3",
+            "selectors": [
+                [
+                    "aria/1",
+                    "aria/[role=\"spinbutton\"]"
+                ],
+                [
+                    "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=number]"
+                ],
+                [
+                    "xpath///*[@id=\"Cart\"]/form/table/tbody/tr[2]/td[5]/input"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Update Cart[role=\"button\"]"
+                ],
+                [
+                    "#Cart > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > button"
+                ],
+                [
+                    "xpath///*[@id=\"Cart\"]/form/table/tbody/tr[3]/td[2]/button"
+                ],
+                [
+                    "text/Update Cart"
+                ]
+            ],
+            "offsetY": 26.662506103515625,
+            "offsetX": 64.41250610351562,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/cart/viewCart",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Proceed to Checkout"
+                ],
+                [
+                    "#Cart > a"
+                ],
+                [
+                    "xpath///*[@id=\"Cart\"]/a"
+                ],
+                [
+                    "text/Proceed to Checkout"
+                ]
+            ],
+            "offsetY": 17.1875,
+            "offsetX": 74.44998168945312,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/account/signonForm?referer=%2Forder%2FnewOrderForm",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Login"
+                ],
+                [
+                    "#Signon > form > div > div > button"
+                ],
+                [
+                    "xpath///*[@id=\"Signon\"]/form/div/div/button"
+                ],
+                [
+                    "text/Login"
+                ]
+            ],
+            "offsetY": 23.462493896484375,
+            "offsetX": 39.824981689453125,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/order/newOrderForm",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Continue"
+                ],
+                [
+                    "#CenterForm > form > div > button:nth-child(1)"
+                ],
+                [
+                    "xpath///*[@id=\"CenterForm\"]/form/div/button[1]"
+                ],
+                [
+                    "text/Continue"
+                ]
+            ],
+            "offsetY": 21.86248779296875,
+            "offsetX": 41.86248779296875,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/order/newOrder",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Confirm"
+                ],
+                [
+                    "#CenterForm > form > div > button:nth-child(1)"
+                ],
+                [
+                    "xpath///*[@id=\"CenterForm\"]/form/div/button[1]"
+                ],
+                [
+                    "text/Confirm"
+                ]
+            ],
+            "offsetY": 13.0625,
+            "offsetX": 36.850006103515625,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/order/viewOrder?orderId=71891&submitted=true",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Delete Order"
+                ],
+                [
+                    "#CenterForm > div > button"
+                ],
+                [
+                    "xpath///*[@id=\"CenterForm\"]/div/button"
+                ],
+                [
+                    "text/Delete Order"
+                ]
+            ],
+            "offsetY": 14.262481689453125,
+            "offsetX": 69.625,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/order/listOrders",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Menu"
+                ],
+                [
+                    "#navigation > div.title-bar > div.title-bar-right > a"
+                ],
+                [
+                    "xpath///*[@id=\"navigation\"]/div[1]/div[3]/a"
+                ]
+            ],
+            "offsetY": 12.149999618530273,
+            "offsetX": 4.20001220703125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Birds"
+                ],
+                [
+                    "#QuickLinks > a:nth-child(5)"
+                ],
+                [
+                    "xpath///*[@id=\"QuickLinks\"]/a[5]"
+                ],
+                [
+                    "text/Birds"
+                ]
+            ],
+            "offsetY": 9.412490844726562,
+            "offsetX": 20.774993896484375,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/categories/BIRDS",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Return to Main Menu"
+                ],
+                [
+                    "#BackLink > a"
+                ],
+                [
+                    "xpath///*[@id=\"BackLink\"]/a"
+                ],
+                [
+                    "text/Return to Main"
+                ]
+            ],
+            "offsetY": 9.0625,
+            "offsetX": 64.01251220703125,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://jpetstore.aspectran.com/catalog/",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
